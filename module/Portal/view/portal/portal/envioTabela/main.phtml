@@ -1,0 +1,67 @@
+<?php $this->inlineScript()
+    ->prependFile($this->basePath('js/projetogeral/table.js'))
+?>
+
+<section>
+	<div class="container pt-4">
+		<div class="rows">
+			<div class="table-responsive">
+				<div class="dt-buttons">
+
+					<button id="btnEnviarTable" type="button"
+							class="modalShow dt-button buttons-csv buttons-html5 "
+							data-toggle="modal" data-target="#modalShoDoc" tabindex="0"
+							aria-controls="tablePortal">Importar Excel
+					</button>
+
+					<div class="modal fade" id="modalShowTable" tabindex="-1"
+						 aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-content">
+
+									<div class="modal-header">
+										<h5 class="modal-title">Enviar
+											Arquivo</h5>
+										<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close">
+										</button>
+									</div>
+									<div class="modal-body">
+										<form id="uploadTable" name="uploadTable" method="post">
+											<input id="fileTable" type="file" name="file"/>
+										</form>
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" id="btnHideTable" class="btn btn-danger"
+												data-dismiss="modal">Fechar
+										</button>
+										<button type="button" id="btnTable" class="btn btn-primary">
+											Salvar
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<table id="tablePortal" class="tablePortal table table-hover text-center mt-2 w-100 collapsing">
+					<thead class="thead-light bg-danger">
+					<tr>
+						<th class="text-light text-center align-middle nowrap">EAN</th>
+						<th class="text-light text-center align-middle nowrap">Rereferência</th>
+						<th class="text-light text-center align-middle nowrap">Descrição</th>
+						<th class="text-light text-center align-middle nowrap">Tipo De Embalagem</th>
+						<th class="text-light text-center align-middle nowrap">Unidade</th>
+						<th class="text-light text-center align-middle nowrap">Qtd Por Embalagem</th>
+						<th class="text-light text-center align-middle nowrap">Valor Un.</th>
+						<th class="text-light text-center align-middle nowrap">Valor Total</th>
+					</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>

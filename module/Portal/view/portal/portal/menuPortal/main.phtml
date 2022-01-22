@@ -1,0 +1,107 @@
+<?php $this->inlineScript()
+    ->prependFile($this->basePath('js/projetogeral/menuPortal.js'))
+?>
+
+<main class="main-container">
+	<div class="container container-padding px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5">
+
+			<div class="col-md-2"></div>
+
+			<div class="col-md-3 mb-5">
+				<div class="p-3 card card-padding">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor"
+						 class="bi bi-person" viewBox="0 0 16 16">
+						<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+					</svg>
+
+					<a id="toggleDados" class="main-a text-center" type="btn btn-link">MEUS <br/><strong>DADOS</strong></a>
+					<div class="panel-group" id="accordionMessagesSetup">
+						<div class="panel panel-default">
+							<div id="panelDados" class="in collapse" style="">
+								<div class="panelDados-a">
+									<a class="panelDados-a-href" href="/">Mudar de senha</a> <br>
+									<a class="panelDados-a-href" href="/">Cadastrar novo usuario</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3 mb-5">
+				<div class="p-3 card card-padding">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor"
+						 class="bi bi-calendar-day" viewBox="0 0 16 16">
+						<path d="M4.684 11.523v-2.3h2.261v-.61H4.684V6.801h2.464v-.61H4v5.332h.684zm3.296 0h.676V8.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a1.806 1.806 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98v4.105zm2.805-5.093c0 .238.192.425.43.425a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43zm.094 5.093h.672V7.418h-.672v4.105z"/>
+						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+					</svg>
+					<a id="toggleDados2" class="main-a text-center" type="btn btn-link">CADASTRO E </br> <strong>AGENDAMENTO</strong></a>
+					<div class="panel-group" id="accordionMessagesSetup">
+						<div class="panel panel-default">
+							<div id="panelDados2" class="in collapse" style="">
+								<div>
+									<a class="panelDados-a-href" href="agendamentos">Meus Agendamentos</a> <br>
+									<a class="panelDados-a-href" href="visita">Agendar nova visita</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3 mb-5">
+				<div class="p-3 card card-padding">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor"
+						 class="bi bi-archive" viewBox="0 0 16 16">
+						<path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+					</svg>
+					<a class="main-a text-center" type="btn btn-link" href="">CADASTRO DE </br> <strong>PRODUTO</strong></a>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+		</div>
+
+		<div class="row gx-4 gx-lg-5">
+			<div class="col-md-3"></div>
+
+			<div class="col-md-3 mb-5">
+				<div class="p-3 card card-padding">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor"
+						 class="bi bi-currency-dollar" viewBox="0 0 16 16">
+						<path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+					</svg>
+					<a id="toggleDados3" class="text-center main-a" type="btn btn-link">TABELA DE </br>
+						<strong>PREÇOS</strong></a>
+					<div class="panel-group" id="accordionMessagesSetup">
+						<div class="panel panel-default">
+							<div id="panelDados3" class="collapse in">
+								<div>
+									<a class="panelDados-a-href" href="tabela">Envio da tabela</a> <br/>
+									<a class="panelDados-a-href" href="criartabela">Criar Tabela</a> <br/>
+									<a class="panelDados-a-href" href="/">Validação tabela de Preços</a> </br/>
+									<a class="panelDados-a-href" href="/">Consultar tabelas</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 mb-5">
+				<div class="p-3 card card-padding">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor"
+						 class="bi bi-file-text" viewBox="0 0 16 16">
+						<path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+						<path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+					</svg>
+					<a class="main-a text-center" type="btn btn-link" href="">COTAÇÕES E </br> <strong>PEDIDOS</strong></a>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</main>

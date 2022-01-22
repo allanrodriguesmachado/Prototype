@@ -1,0 +1,115 @@
+<?php $this->inlineScript()
+    ->prependFile($this->basePath('js/projetogeral/table.js'))
+?>
+
+<section>
+	<div class="container pt-4">
+		<div class="rows">
+			<div class="table-responsive">
+
+<!--				<button type="button"-->
+<!--						class="modalShow dt-button buttons-csv buttons-html5 ">Enviar-->
+<!--				</button>-->
+
+				<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+						class="modalShow dt-button buttons-csv buttons-html5 ">Adicionar Tabela
+				</button>
+
+				<table id="createTable" class=" table table-hover text-center mt-2 w-100 collapsing">
+					<thead class="thead-light bg-danger">
+					<tr>
+						<th class="text-light text-center align-middle nowrap">EAN</th>
+						<th class="text-light text-center align-middle nowrap">Referência</th>
+						<th class="text-light text-center align-middle nowrap">Descrição</th>
+						<th class="text-light text-center align-middle nowrap">Tipo De Embalagem</th>
+						<th class="text-light text-center align-middle nowrap">Unidade</th>
+						<th class="text-light text-center align-middle nowrap">Qtd Por Embalagem</th>
+						<th class="text-light text-center align-middle nowrap">Valor Un.</th>
+						<th class="text-light text-center align-middle nowrap">Valor Total</th>
+					</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Criar Tabela</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="criarTabela">
+						<div class="row mb-2">
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="EAN"
+									   id="ean"
+									   name="ean"/>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Nome Referência"
+									   id="referencia"
+									   name="referencia">
+							</div>
+						</div>
+
+
+						<div class="row mb-2">
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Descrição"
+									   id="descricao"
+									   name="descricao"/>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Tipo De Embalagem"
+									   id="embalagem"
+									   name="embalagem">
+							</div>
+						</div>
+
+
+						<div class="row mb-2">
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Unidade"
+									   id="unidade"
+									   name="unidade"/>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Qtd Por Embalagem"
+									   id="quantidade_embalagem"
+									   name="quantidade_embalagem">
+							</div>
+						</div>
+
+
+						<div class="row mb-2">
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Valor Un"
+									   id="valor_unitario"
+									   name="valor_unitario"/>
+							</div>
+
+							<div class="col-md-6 mb-2">
+								<input type="text" class="form-control" placeholder="Valor Total"
+									   id="valor_total"
+									   name="valor_total">
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+					<button id="btnSalvarTabela" type="button" class="btn btn-primary">Salvar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>

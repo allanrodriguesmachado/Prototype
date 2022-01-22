@@ -1,0 +1,69 @@
+<?php $this->inlineScript()
+    ->prependFile($this->basePath('js/projetogeral/cadastro.js'))
+?>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="container-fluid">
+
+		<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="#">
+				<img class="img-nav" src="/img/shibata-supermercados.svg" alt="Shibata Supermercados"
+					 title="Shibata Supermercados">
+			</a>
+		</a>
+
+		<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="toggler-icon top-bar"></span>
+			<span class="toggler-icon middle-bar"></span>
+			<span class="toggler-icon bottom-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+			<!--			<div class="col-6">-->
+			<!--				<h3 class="text-light d-none d-lg-block ">Cadastro agendamento</h3>-->
+			<!--			</div>-->
+
+			<div>
+				<ul class="navbar-nav">
+					<div class="rounded mt-2" style="background: #e5d8d8a3; margin-right: 10px">
+						<li class="nav-item dropdown">
+							<a class="p-4" href="/portal/">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="white"
+									 class="bi bi-person"
+									 viewBox="0 0 16 16">
+									<path d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
+									<path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path>
+								</svg>
+							</a>
+						</li>
+					</div>
+
+					<div class="rounded mt-2" style="background: #e5d8d8a3; margin-right: 10px;
+    padding-inline: 20px;">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+							   data-bs-toggle="dropdown" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="35" fill="white"
+									 class="bi bi-person" viewBox="0 0 16 16">
+									<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+								</svg>
+
+								<div style="display: inline-grid">
+									<h6 class="cadastroUsuario" name="cadastroUsuario">riemann</h6>
+								</div>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Home</a></li>
+								<li><a class="dropdown-item" href="/portal/">Menu</a></li>
+								<li><a class="dropdown-item" href="/">Sair</a></li>
+							</ul>
+						</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
