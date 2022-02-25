@@ -1,0 +1,16 @@
+{
+    "name": "allanrodrigues/upload-php",
+    "authors": [
+        {
+            "name": "allanrodriguesmachado",
+            "email": "allan.rodrigues14@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
