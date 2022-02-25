@@ -1,8 +1,8 @@
 <?php
 
-//require __DIR__ . '/app/classes/Pessoa.php';
-//require __DIR__ . '/app/classes/AtividadesPessoa.php';
-require __DIR__ . '/app/classes/UploadFotos.php';
+require "vendor/autoload.php";
+
+use App\classes\UploadFotos;
 
 $upload = new UploadFotos();
 
@@ -11,10 +11,6 @@ $upload->extension();
 $upload->rename();
 echo $upload->upload();
 
-$upload->file('foto.png');
-$upload->extension();
-$upload->rename();
-echo $upload->upload();
 
 
 
