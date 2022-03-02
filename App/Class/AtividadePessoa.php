@@ -1,14 +1,16 @@
 <?php
 
-class AtividadesPessoa
+namespace App\Class;
+
+class AtividadePessoa
 {
     public function pular()
     {
-        return "Pular";
+        echo "Pular";
     }
 
     public function andar()
     {
-        return  "Andar";
+        echo "Andar";
     }
 }
