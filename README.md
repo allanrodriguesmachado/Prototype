@@ -1,1 +1,1 @@
-# MVC - PHP
+# Autenticação JWT com PHP
